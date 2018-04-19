@@ -53,7 +53,8 @@ public class SectionListDataAdapter extends RecyclerView.Adapter<SectionListData
 
     public class SingleItemRowHolder extends RecyclerView.ViewHolder {
 
-        protected TextView tvTitle;
+        protected TextView tvTitle, createdFor;
+
 
         protected ImageView itemImage;
 
@@ -61,6 +62,7 @@ public class SectionListDataAdapter extends RecyclerView.Adapter<SectionListData
         public SingleItemRowHolder(View view) {
             super(view);
 
+            this.createdFor = (TextView) view.findViewById(R.id.createdFor);
             this.tvTitle = (TextView) view.findViewById(R.id.tvTitle);
             this.itemImage = (ImageView) view.findViewById(R.id.itemImage);
 

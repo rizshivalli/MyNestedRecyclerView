@@ -4,14 +4,18 @@ public class SingleItemModel {
     private String name;
     private String url;
     private String description;
+    private String createdFor;
 
 
     public SingleItemModel() {
     }
 
-    public SingleItemModel(String name, String url) {
+
+    public SingleItemModel(String name, String url, String createdFor) {
         this.name = name;
         this.url = url;
+        this.createdFor = createdFor;
+
     }
 
 
@@ -38,4 +42,8 @@ public class SingleItemModel {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public String getCreatedFor() {   return createdFor;  }
+
+    public void setCreatedFor(String createdFor) {   this.createdFor = createdFor;   }
 }
